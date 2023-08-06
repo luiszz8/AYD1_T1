@@ -10,7 +10,7 @@ app.post('/operacion', (req, res) => {
   const nuevoRecurso = req.body;
   var v1=nuevoRecurso.valor1
   var v2=nuevoRecurso.valor2
-  res.json({ valor: v1+v2});
+  res.json({ valor: v1*v2});
 });
 
 // Ruta de ejemplo
