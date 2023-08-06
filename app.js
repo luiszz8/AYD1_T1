@@ -13,6 +13,11 @@ app.post('/operacion', (req, res) => {
   res.json({ valor: v1+v2});
 });
 
+// Ruta de ejemplo
+app.get('/', (req, res) => {
+  res.send('Luis Sánchez - 201700339');
+});
+
 // Iniciar el servidor
 app.listen(port, () => {
   console.log(`Servidor Express en funcionamiento en el puerto ${port}`);
